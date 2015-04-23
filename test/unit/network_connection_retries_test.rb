@@ -87,7 +87,7 @@ class NetworkConnectionRetriesTest < Minitest::Test
   end
 
   def test_mixture_of_failures_with_retry_safe_enabled
-    @requester.expects(:post).times(3).raises(Errno::ECONNRESET).
+    @requester.expects(:post).times(3).raises(Errno::EHOSTUNREACH).
                                        raises(Errno::ECONNREFUSED).
                                        raises(EOFError)
 

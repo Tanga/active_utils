@@ -54,5 +54,5 @@ class PostsDataTest < Minitest::Test
     SSLPoster.ssl_strict = true
     @poster.raw_ssl_request(:post, "https://shopify.com", "", {})
   end
-  
+
 end
