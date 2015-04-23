@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "active_utils/version"
 
 Gem::Specification.new do |s|
-  s.name        = "active_utils"
+  s.name        = "tanga_active_utils"
   s.version     = ActiveUtils::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Shopify"]
